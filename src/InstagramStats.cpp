@@ -127,7 +127,7 @@ InstagramUserStats InstagramStats::getUserStats(String user) {
     client->println();
 
     now = millis();
-    while (millis() - now < 3000) {
+    while (millis() - now < 20000) {
       while (client->available()) {
         char c = client->read();
 
